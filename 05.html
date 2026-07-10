@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>대전 싸피 05반 강지환</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Pretendard & NanumSquare Neo Fonts -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css" />
+    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-neo.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --forest-green: #1E4620;
+            --warm-cream: #FDFBF7;
+            --soft-cream: #F5F1E9;
+            --deep-charcoal: #2B2B2B;
+        }
+
+        body {
+            font-family: 'NanumSquareNeo', 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+            background-color: var(--warm-cream);
+            color: var(--deep-charcoal);
+            scroll-behavior: smooth;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Pretendard', sans-serif;
+            font-weight: 700;
+            color: var(--forest-green);
+        }
+
+        /* 스크롤바 커스텀 */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: var(--warm-cream);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: var(--forest-green);
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between selection:bg-[#1E4620] selection:text-white">
+
+    <!-- 상단 네비게이션 바 -->
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-[#FDFBF7]/80 border-b border-[#E5E0D8] px-6 py-4">
+        <div class="max-w-5xl mx-auto flex justify-between items-center">
+            <a href="#" class="text-lg font-bold tracking-tight text-[#1E4620]">Jihwan.K</a>
+            <nav class="flex space-x-6 text-sm font-medium">
+                <a href="#about" class="hover:text-[#1E4620] transition-colors">소개</a>
+                <a href="#records" class="hover:text-[#1E4620] transition-colors">기록 카드</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 1. 히어로 섹션 (Hero) -->
+    <section class="relative px-6 py-28 md:py-40 flex flex-col items-center justify-center text-center overflow-hidden">
+        <!-- 배경 데코레이션 (아늑한 느낌의 기하학 도형) -->
+        <div class="absolute -top-12 -left-12 w-64 h-64 bg-[#1E4620]/5 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute -bottom-12 -right-12 w-96 h-96 bg-[#1E4620]/5 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-3xl z-10">
+            <span class="inline-block px-4 py-1.5 mb-6 text-xs font-semibold tracking-wider text-[#1E4620] bg-[#1E4620]/10 rounded-full">
+                SSAFY 13기 대전 캠퍼스
+            </span>
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight mb-8 leading-tight text-[#1E4620]">
+                대전 싸피 05반<br class="md:hidden"><span class="bg-[#1E4620]/10 px-2 rounded">강지환</span>
+            </h1>
+            <p class="text-base md:text-lg text-[#555555] leading-relaxed max-w-xl mx-auto mb-10 font-light">
+                01년생, 대전 유성구 거주.<br>
+                배움과 취미를 묵묵히 아카이빙하는 개인 기록 공간입니다.
+            </p>
+            <div class="flex justify-center">
+                <a href="#records" class="px-8 py-3.5 bg-[#1E4620] text-white font-medium rounded-lg hover:bg-[#153216] transition-all shadow-md hover:shadow-lg text-sm">
+                    기록 카드 보기
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. 소개 섹션 (About) -->
+    <section id="about" class="px-6 py-20 bg-[#F5F1E9]/50 border-t border-b border-[#E5E0D8]">
+        <div class="max-w-4xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+                <div class="md:col-span-5">
+                    <span class="text-xs font-bold uppercase tracking-wider text-[#1E4620]/70">Profile</span>
+                    <h2 class="text-3xl font-bold mt-2 mb-6">나의 이야기</h2>
+                    <div class="space-y-4 text-sm text-[#444444]">
+                        <div class="flex items-center gap-3">
+                            <span class="w-8 h-8 rounded-full bg-[#1E4620]/10 flex items-center justify-center text-[#1E4620]">📍</span>
+                            <span>01년생, 대전광역시 유성구 거주</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <span class="w-8 h-8 rounded-full bg-[#1E4620]/10 flex items-center justify-center text-[#1E4620]">🎓</span>
+                            <span>컴퓨터공학과 졸업생</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <span class="w-8 h-8 rounded-full bg-[#1E4620]/10 flex items-center justify-center text-[#1E4620]">🎹</span>
+                            <span>취미는 클래식 피아노 연주</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <span class="w-8 h-8 rounded-full bg-[#1E4620]/10 flex items-center justify-center text-[#1E4620]">🐕</span>
+                            <span>반려동물 보더콜리와 일상 공유</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:col-span-7 bg-[#FDFBF7] p-8 rounded-2xl border border-[#E5E0D8] shadow-sm">
+                    <h3 class="text-lg font-bold mb-4 text-[#1E4620] flex items-center gap-2">
+                        <span>💡</span> 컴공 졸업, 그리고 새로운 시작
+                    </h3>
+                    <p class="text-sm md:text-base text-[#555555] leading-relaxed mb-4">
+                        대학에서 컴퓨터공학을 전공하고 졸업을 맞이한 후, 약 6개월 동안의 치열했던 준비와 깊은 고민의 시간을 보냈습니다. 무작정 달리기보다 나아가고자 하는 방향을 정립하기 위한 충전기였습니다.
+                    </p>
+                    <p class="text-sm md:text-base text-[#555555] leading-relaxed">
+                        그 고민 끝에 데이터의 무궁무진한 가능성에 매료되었고, 현재는 <strong>SSAFY 대전 5반 데이터 트랙</strong>에 입과하여 매일 집요하게 코드를 짜고 데이터를 정제하며 단단히 기초를 다져가고 있습니다.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. 기록 카드 섹션 (Records) - 하나씩 보여주는 슬라이더 형식 -->
+    <section id="records" class="px-6 py-20 max-w-4xl mx-auto w-full mb-12 overflow-hidden">
+        <div class="text-center mb-12">
+            <span class="text-xs font-bold uppercase tracking-wider text-[#1E4620]/70">Fact Cards</span>
+            <h2 class="text-3xl md:text-4xl font-bold mt-2">강지환의 사실 기록 카드</h2>
+            <p class="text-sm text-[#666666] mt-2">삶을 채우고 있는 중요한 조각들입니다.</p>
+        </div>
+
+        <!-- 슬라이더 뷰포트 컨테이너 -->
+        <div class="relative bg-[#FDFBF7] rounded-2xl border border-[#E5E0D8] p-2 md:p-4 shadow-sm overflow-hidden">
+            <!-- 카드 움직임 영역 (Track) -->
+            <div id="card-track" class="flex transition-transform duration-500 ease-out" style="transform: translateX(0%);">
+                
+                <!-- 카드 1: 전공 정보 -->
+                <div class="w-full flex-shrink-0 px-4 py-6">
+                    <div class="flex flex-col md:flex-row gap-6 md:gap-8 items-center min-h-[480px] md:h-96">
+                        <!-- 텍스트 영역 -->
+                        <div class="flex-1 flex flex-col justify-center h-full">
+                            <div>
+                                <div class="w-12 h-12 rounded-lg bg-[#1E4620]/10 flex items-center justify-center text-[#1E4620] mb-6">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/></svg>
+                                </div>
+                                <h3 class="text-xl md:text-2xl font-bold mb-3 text-[#1E4620]">컴퓨터공학과 학사</h3>
+                                <p class="text-sm text-[#666666] leading-relaxed">
+                                    기본적인 컴퓨터 구조, 네트워크, 데이터베이스, 알고리즘을 이수하였습니다. 졸업 이후 6개월의 정비 기간을 통해 단순 스펙 쌓기가 아닌, 진정으로 원하고 몰입할 수 있는 기술 분야가 무엇인지 진지하게 성찰했습니다.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- 이미지 영역 -->
+                        <div class="w-full md:w-[45%] h-52 md:h-full rounded-xl overflow-hidden border border-[#E5E0D8]/80 shadow-inner flex-shrink-0 bg-white">
+                            <img src="컴퓨터.png" alt="컴퓨터공학과 학사 PC" class="w-full h-full object-contain p-2">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 카드 2: 싸피 데이터 트랙 -->
+                <div class="w-full flex-shrink-0 px-4 py-6">
+                    <div class="flex flex-col md:flex-row gap-6 md:gap-8 items-center min-h-[480px] md:h-96">
+                        <!-- 텍스트 영역 -->
+                        <div class="flex-1 flex flex-col justify-center h-full">
+                            <div>
+                                <div class="w-12 h-12 rounded-lg bg-[#1E4620]/10 flex items-center justify-center text-[#1E4620] mb-6">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"/></svg>
+                                </div>
+                                <h3 class="text-xl md:text-2xl font-bold mb-3 text-[#1E4620]">SSAFY 데이터 트랙</h3>
+                                <p class="text-sm text-[#666666] leading-relaxed">
+                                    현재 대전 5반에서 활약하며, 방대한 로우 데이터(Raw Data)를 가공하고 유의미한 인사이트를 창출하는 학습에 몰두하고 있습니다. 동료들과 활발한 코드 리뷰를 진행하며 성장 과정을 하루하루 빠짐없이 아카이빙합니다.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- 이미지 영역 -->
+                        <div class="w-full md:w-[45%] h-52 md:h-full rounded-xl overflow-hidden border border-[#E5E0D8]/80 shadow-inner flex-shrink-0 bg-white">
+                            <img src="데이터.jpg" alt="데이터 분석 데이터트랙 이미지" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 카드 3: 피아노 연주 -->
+                <div class="w-full flex-shrink-0 px-4 py-6">
+                    <div class="flex flex-col md:flex-row gap-6 md:gap-8 items-center min-h-[480px] md:h-96">
+                        <!-- 텍스트 영역 -->
+                        <div class="flex-1 flex flex-col justify-center h-full">
+                            <div>
+                                <div class="w-12 h-12 rounded-lg bg-[#1E4620]/10 flex items-center justify-center text-[#1E4620] mb-6">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"/></svg>
+                                </div>
+                                <h3 class="text-xl md:text-2xl font-bold mb-3 text-[#1E4620]">피아노 연주 (취미)</h3>
+                                <p class="text-sm text-[#666666] leading-relaxed">
+                                    복잡하게 얽힌 소스 코드에서 벗어나, 온전히 손끝의 촉감과 소리에만 집중하는 시간입니다. 클래식 명곡을 꾸준히 연습하여 한 곡을 온전히 내 손으로 끝마쳤을 때 느끼는 집중의 성취감은 저의 일상적 뚝심과 닿아있습니다.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- 이미지 영역 -->
+                        <div class="w-full md:w-[45%] h-52 md:h-full rounded-xl overflow-hidden border border-[#E5E0D8]/80 shadow-inner flex-shrink-0 bg-white">
+                            <img src="피아노.png" alt="그랜드 피아노 이미지" class="w-full h-full object-contain p-4">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 카드 4: 반려견 보더콜리 -->
+                <div class="w-full flex-shrink-0 px-4 py-6">
+                    <div class="flex flex-col md:flex-row gap-6 md:gap-8 items-center min-h-[480px] md:h-96">
+                        <!-- 텍스트 영역 -->
+                        <div class="flex-1 flex flex-col justify-center h-full">
+                            <div>
+                                <div class="w-12 h-12 rounded-lg bg-[#1E4620]/10 flex items-center justify-center text-[#1E4620] mb-6">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                </div>
+                                <h3 class="text-xl md:text-2xl font-bold mb-3 text-[#1E4620]">반려견 보더콜리</h3>
+                                <p class="text-sm text-[#666666] leading-relaxed">
+                                    세상에서 제일 똑똑하고 끝없는 체력을 자랑하는 동반자 보더콜리와 함께 살고 있습니다. 매일 유성구 구석구석을 힘차게 뛰노는 아침/저녁 산책 일과는, 힘든 코딩 학습 속에서도 지치지 않고 활력을 유지하게 해주는 고마운 비결입니다.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- 이미지 영역 -->
+                        <div class="w-full md:w-[45%] h-52 md:h-full rounded-xl overflow-hidden border border-[#E5E0D8]/80 shadow-inner flex-shrink-0 bg-white">
+                            <img src="보더콜리.png" alt="보더콜리 이미지" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- 컨트롤러 영역 (이전/다음 및 페이지 표시기) -->
+        <div class="flex justify-between items-center mt-6 max-w-md mx-auto px-2">
+            <!-- 이전 버튼 -->
+            <button id="prev-btn" class="w-10 h-10 rounded-full border border-[#E5E0D8] bg-[#FDFBF7] flex items-center justify-center text-[#1E4620] hover:bg-[#F5F1E9] transition-all disabled:opacity-30 disabled:pointer-events-none" disabled>
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+            </button>
+            
+            <!-- 페이지 네비게이션 도트 -->
+            <div id="slide-dots" class="flex gap-2.5">
+                <span class="w-2.5 h-2.5 rounded-full bg-[#1E4620] cursor-pointer transition-all duration-300" data-index="0"></span>
+                <span class="w-2.5 h-2.5 rounded-full bg-[#E5E0D8] cursor-pointer transition-all duration-300" data-index="1"></span>
+                <span class="w-2.5 h-2.5 rounded-full bg-[#E5E0D8] cursor-pointer transition-all duration-300" data-index="2"></span>
+                <span class="w-2.5 h-2.5 rounded-full bg-[#E5E0D8] cursor-pointer transition-all duration-300" data-index="3"></span>
+            </div>
+
+            <!-- 다음 버튼 -->
+            <button id="next-btn" class="w-10 h-10 rounded-full border border-[#E5E0D8] bg-[#FDFBF7] flex items-center justify-center text-[#1E4620] hover:bg-[#F5F1E9] transition-all disabled:opacity-30 disabled:pointer-events-none">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </button>
+        </div>
+    </section>
+
+    <!-- 4. 푸터 (Footer) -->
+    <footer class="bg-[#F5F1E9] border-t border-[#E5E0D8] px-6 py-8 text-center text-xs text-[#666666] w-full">
+        <div class="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+            <p class="font-medium">© 2026 강지환.</p>
+            <div class="flex space-x-4">
+                <span class="text-neutral-400">#대전싸피_05반</span>
+                <span class="text-neutral-400">#데이터트랙</span>
+                <span class="text-neutral-400">#01년생_기록실</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 슬라이더 기능 제어 자바스크립트 -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const track = document.getElementById('card-track');
+            const prevBtn = document.getElementById('prev-btn');
+            const nextBtn = document.getElementById('next-btn');
+            const dots = document.querySelectorAll('#slide-dots span');
+            
+            let currentIndex = 0;
+            const totalCards = 4;
+
+            function updateSlider() {
+                // 슬라이더 이동 연산 (100% 단위를 좌우로 이동)
+                track.style.transform = `translateX(-${currentIndex * 100}%)`;
+                
+                // 첫 페이지와 마지막 페이지에서의 버튼 활성화 여부 핸들링
+                prevBtn.disabled = currentIndex === 0;
+                nextBtn.disabled = currentIndex === totalCards - 1;
+
+                // 도트 스타일 교체
+                dots.forEach((dot, idx) => {
+                    if (idx === currentIndex) {
+                        dot.classList.remove('bg-[#E5E0D8]');
+                        dot.classList.add('bg-[#1E4620]');
+                    } else {
+                        dot.classList.remove('bg-[#1E4620]');
+                        dot.classList.add('bg-[#E5E0D8]');
+                    }
+                });
+            }
+
+            // 이전 클릭 제어
+            prevBtn.addEventListener('click', () => {
+                if (currentIndex > 0) {
+                    currentIndex--;
+                    updateSlider();
+                }
+            });
+
+            // 다음 클릭 제어
+            nextBtn.addEventListener('click', () => {
+                if (currentIndex < totalCards - 1) {
+                    currentIndex++;
+                    updateSlider();
+                }
+            });
+
+            // 도트 개별 클릭 처리
+            dots.forEach((dot, idx) => {
+                dot.addEventListener('click', () => {
+                    currentIndex = idx;
+                    updateSlider();
+                });
+            });
+        });
+    </script>
+</body>
+</html>
